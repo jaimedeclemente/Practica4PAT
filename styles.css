@@ -10,35 +10,11 @@ footer
 {
     background-image: linear-gradient(to bottom, #8e8eb1, #8282a7, #76779d, #6a6b94, #5e608a);
 }
-h1
+#tabla-cotizacion
 {
-    font-family: "Futura";
+    background-color: #5e608a;
 }
-h2
+*
 {
-    font-family: "Futura";
-}
-h3
-{
-    font-family: "Futura";
-}
-h4
-{
-    font-family: "Futura";
-}
-h5
-{
-    font-family: "Futura";
-}
-h6
-{
-    font-family: "Futura";
-}
-p
-{
-    font-family: "Futura";
-}
-a
-{
-    font-family: "Futura";
+    font-family : "Futura";
 }

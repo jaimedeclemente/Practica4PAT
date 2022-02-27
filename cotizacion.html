@@ -21,27 +21,26 @@
     </center>
     <main>
         <br>
-        <div class="row">
-            <div class="col" id="apertura">
-                Apertura:
-            </div>
-            <div class="col" id="cierre">
-                Cierre:
-            </div>
-            <div class="col" id="variacion">
-                Variación:
-            </div>
-            <div class="col" id="volumen">
-                Volumen:
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" id="actual">
-                Cotización Actual:
-            </div>
-        </div>
         <center>
-            <iframe height="480" width="650" src="https://ssltvc.investing.com/?pair_ID=102931&height=480&width=650&interval=month&plotStyle=candles&domain_ID=4&lang_ID=4&timezone_ID=12"></iframe>
+            <div class="container-fluid">
+                <table class="table table-responsive table-bordered border-dark text-center" id="tabla-cotizacion">
+                    <thead>
+                        <tr>
+                            <th>Apertura</th>
+                            <th>Cierre</th>
+                            <th>Variación</th>
+                            <th>Volumen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td id="apertura"></td>
+                        <td id="cierre"></td>
+                        <td id="variacion"></td>
+                        <td id="volumen"></td>
+                    </tbody>
+                </table>
+            </div>
+            <iframe height="480" width="650" src="https://ssltvc.investing.com/?pair_ID=102931&height=480&width=650&interval=month&plotStyle=line&domain_ID=4&lang_ID=4&timezone_ID=12"></iframe>        
         </center>
         <br>
     </main>
@@ -72,4 +71,6 @@
         </center>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./cotizacion.js"></script>
 </html>
